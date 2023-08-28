@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(232, 233, 232);
+}
+.logo{
+    position: absolute;
+    width: 6%;
+    margin: 4% 19%;
+    float: left;
+}
+.logo:hover{
+    width: 7%;
+}
+.titulo{
+   position: absolute;
+   margin: 5% 35%;
+   color: rgb(113, 123, 131);
+}
+
+/*menu*/
+nav{
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    margin-top: 12%;
+    width: 100%;
+    background-color: rgb(133, 123, 123);
+}
+.navegacion{
+    width: 100%;
+    height: 6%;
+    align-content: center;
+    padding-left: 2%;
+}
+.menu li{
+    position: relative;
+    display: inline-block;
+}
+.menu li a{
+    display: block;
+    padding: 1% 2%;
+    margin: 0 1%;
+    color: rgb(0, 0, 0);
+    font-size: 120%;
+    text-decoration: none;
+}
+
+/*submenu*/
+
+.submenu{
+    position: absolute;
+    width: 1%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    background: linear-gradient(to bottom, rgb(10, 9, 8), rgb(60, 60, 62),rgb(27, 25, 2744));
+    text-align: center;
+    border-radius: 5px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/*Banner*/
+
+.banner_estatico{
+    display: flex;
+    padding: 20% 2%;
+    background-image:url(../img/banner3.jpg);
+    background-size: 100%;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+
+}
