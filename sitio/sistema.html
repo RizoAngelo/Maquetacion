@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/estilo_css.css">
+    <link rel="icon" href="./img/logo verde.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>HOTEL</title>
+</head>
+<body>
+    <!-- <iframe src="./banner.html" frameborder="0"></iframe> -->
+    <header>
+        <nav>
+            <a href="../index.html" onclick="seleccionar(this)">Blog</a>
+            <a href="#intro" onclick="seleccionar(this)" class="selected">Inicio</a>
+            <a href="#servicios" onclick="seleccionar(this)">servicios</a>
+            <span><i class="icono-menu"><img class="icono-menu" src="../img/logo verde.png" alt=""></i></span>
+            <a href="#reservas" onclick="seleccionar(this)">reservas</a>
+            <a href="#contactenos" onclick="seleccionar(this)">contactenos</a>
+            <a href="#registro" onclick="seleccionar(this)">registro</a>
+        </nav>
+    </header>
+
+    <!-- menu footer -->
+    <section id="intro" class="bloque">
+        <div class="contenido">
+            <div>
+                <h1>LA MEJOR ESTANCIA DE SU VIAJE </h1>
+            </div>
+            <div class="formulario">
+                <form action="#servicios">
+                    <h2>iniciar sesion</h2>
+                    <div class="info">
+                        <label >Usuario</label>
+                        <input type="text">
+
+
+                    </div>
+                    <div class="info">
+                        <label >Contraseña</label>
+                        <input type="password">
+                        
+
+                    </div>
+
+                    <div >
+                       
+                        <input type="submit" value="ENVIAR" class="btn_enviar">
+                        
+
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- servicos -->
+
+    <section id="servicios" class="bloque">
+        <div>
+            <h2>NUESTROS SERVICIOS</h2>
+        </div>
+
+        <div class="contenido">
+
+            <div class="item servicio1">
+                <div class="overlay"></div>
+                <a href="./img/piscina.jpg"><h2>piscina</h2></a>
+
+
+            </div>
+
+            <div class="item servicio2">
+                <div class="overlay"></div>
+                <a href="./img/restaurante.jpg"><h2>restaurante</h2></a>
+
+
+            </div>
+
+            <div class="item servicio3">
+                <div class="overlay"></div>
+                <a href="./bar.html"><h2>bar</h2></a>
+
+
+            </div>
+
+            <div class="item servicio4">
+                <div class="overlay"></div>
+                <a href="./img/spa.jpg"><h2>spa</h2></a>
+
+
+            </div>
+
+            <div class="item servicio5">
+                <div class="overlay"></div>
+                <a href="./img/room service.jpg"><h2>room service</h2></a>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+<!-- reservas -->
+    <section id="reservas" class="bloque">
+        <div class="contenido">
+            <div><h2>Desea reservar</h2></div>
+
+            <div class="contenido">
+                <p>los presentes condiciones  estan sujetos a lo dispuesto en la NTSH sectorial  colombiana 003  (2003-02-24)
+                    <br>
+                    <br>
+                    esta norma tiene como objeto proporcionar  los requisitos para ofrecer  productos y servicios  dando respuesta al cliente,<br> 
+                    realizar check  in y check out de huespedes y reservar  habitaciones de acuerdo  con procedimientos  definidos en los <br> 
+                    establecimientos de alojamiento y hospedaje. 
+                </p>
+
+                <div class="item clausula">
+                    <div class="overlay"></div>
+                    <a href="./reservas/clausulas.html"><h2>clausula</h2></a>
+    
+    
+                </div>
+
+                <div class="item condiciones">
+                    <div class="overlay"></div>
+                    <a href="./reservas/clausulas.html"><h2>condiciones de pago</h2></a>
+    
+    
+                </div>
+
+                <div class="item reservas">
+                    <div class="overlay"></div>
+                    <a href="./reservas/clausulas.html"><h2>reservas</h2></a>
+    
+    
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- contactenos -->
+
+    <section id="contactenos" class="bloque">
+        <div class="contenido">
+            <div class="datos">
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+                    <div class="datos__dir">
+                        <h2>Direccion</h2>
+                        <h3>calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+                    <div class="datos__tel">
+                        <h2>Telefono</h2>
+                        <h3>()</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+                    <div class="datos__email">
+                        <h2>Direccion</h2>
+                        <h3>calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
+
+                    </div>
+
+                </div>
+
+                <div class="item">
+                    <div class="icono">
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+                    <div class="datos__whass">
+                        <h2>Direccion</h2>
+                        <h3>calle 13 # 10 - 93, Soacha, Cundinamarca</h3>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="formulario">
+                <form action="#servicios">
+                    <h2>Enviar Reporte</h2>
+                    <div class="info">
+                        <label >Nombre</label>
+                        <input type="text">
+
+
+                    </div>
+                    <div class="info">
+                        <label >Apellido</label>
+                        <input type="text">
+                        
+
+                    </div>
+
+
+                    <div class="info">
+                        <label >Correo</label>
+                        <input type="email">
+                        
+
+                    </div>
+
+                    <div class="info">
+                        <label >mensaje</label>
+                        <textarea  cols="30" rows="10"></textarea>
+                        
+
+                    </div>
+
+                    <div >
+                       
+                        <input type="submit" value="ENVIAR" class="btn_enviar">
+                        
+
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <section id="registro" class="bloque">
+
+        <div class="formulario">
+            <form action="#registro">
+                <h2>Enviar Reporte</h2>
+                <div class="info">
+                    <label >Nombre</label>
+                    <input type="text">
+
+
+                </div>
+                <div class="info">
+                    <label >Apellido</label>
+                    <input type="text">
+                    
+
+                </div>
+
+
+                <div class="info">
+                    <label >Correo</label>
+                    <input type="email">
+                    
+
+                </div>
+
+                <div class="info">
+                    <label >fecha</label>
+                    <input type="date">
+
+                    
+
+                </div>
+
+                <div class="info">
+                    <label >contraseña</label>
+                    <input type="password">
+                    
+                </div>
+
+                <div >
+                   
+                    <input type="submit" value="ENVIAR" class="btn_enviar">
+                    
+
+                </div>
+
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <script src="./js/sistema.js"></script>
+</body>
+</html>

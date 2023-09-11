@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+section,
+aside,
+nav,
+article {
+    display: block;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    width: 940px;
+    background: rgb(232, 233, 232);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.logo {
+    margin-left: 20px;
+    height: auto;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.titulo {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: rgb(113, 123, 131);
+}
+
+
+/*--menu--*/
+nav {
+    display: flex;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    background-color: rgb(133, 123, 123);
+    justify-content: space-around;
+}
+
+.navegar {
+    width: 100%;
+    height: 40px;
+    align-content: center;
+    padding-left: 50px;
+}
+
+.navegar ul {
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+.menu li:hover .submenu{
+    visibility: visible;
+    opacity: 2;
+}
+.menu li a:hover{
+    color: black;
+    transition: all 0.1s;
+}
+
+/*--submenu--*/
+
+.submenu {
+    position: absolute;
+    width: 180px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 3.0s;
+    background: linear-gradient(to bottom,rgb(14, 14, 14),rgb(93, 93, 93),rgb(16, 16, 16));
+    text-align: center;
+    border-radius: 5px;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: rgb(133, 123, 123);
+    text-decoration: none;
+}
+.submenu li a:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+}
+
+/*--banner--*/
+.banner_estatico {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 250px;
+    background-size: 100%;
+    border-radius: 22px;
+}
+
+.banner_estatico h2,
+.banner_estatico p {
+    position: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.titulo_banner {
+    color: rgb(133, 123, 123);
+    font-size: 30px;
+}
+
+/*Contenido*/
+
+/*Articulo*/
+.contenido{
+    display: table;
+}
+/*redizar el contenido del entidad*/
+.entidad{
+    padding: 50px 20px 50px 20px;
+}
+/*redizar el contenido de articulo*/
+.articulo{
+    column-count: 2;
+    width: 100%;
+    column-gap: 50px;
+}
+.articulo h2{
+    color: rgb(133, 123, 123);
+}
+.articulo img{
+ padding: 10px;
+}
+.articulo .aprendices{
+    width: 100%;
+}
+/*Comentarios*/
+
+.comentarios article{
+    display: table;
+    padding: 22px;
+}
+.comentarios h3{
+    font-size: 26px;
+    padding: 10px 0 10px 0;
+}
+.comentarios article div{
+    display :table-cell;
+    width:200px;
+    padding-right: 22px;
+}
+.comentarios article:nth-child(odd){
+    padding: 20px;
+    background-color: rgb(148, 147, 146);
+    width: 100%;
+    border-radius: 50px;
+}
+/*Form*/
+form {
+    margin-top: 21px;
+    padding-top: 22px;
+    border-top: 1px solid #d7d7d7;
+}
+
+form p {
+    display: table;
+    margin-bottom: 22px;
+    padding: 0 22px;
+}
+
+form label {
+    display: table-cell;
+    width: 140px;
+    padding-right: 20px;
+    text-align: right;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+form input[type="text"],
+form input[type="email"]{
+    display: table-cell;
+    width: 300px;
+    height: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    display: table-cell;
+    width: 80px;
+    height: 30px;
+    background-color: #373738;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: 'Victor Mono', monospace;
+}
+
+form textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #d7d7d7;
+}
+
+form input[type="submit"] {
+    margin-left: 162px;
+}
+/*Seccion*/
+aside{
+    display: table-cell;
+    width: 300px;
+}
+/*Echo por el instructor*/
+aside section {
+    margin: 22px 0 0 22px;
+    padding: 11px 22px;
+    border-radius: 11px;
+}
+aside section a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 0 0 0 22px;
+    list-style: none;
+    padding-bottom: 10px;
+}
+aside section a:hover {
+    text-decoration: underline;
+}
+section img{
+    border-radius: 3px;
+    box-shadow: 3px 3px 7px #777;
+}
+/*footer*/
+/*heho por el instructor*/
+footer{
+    position: absolute;
+    margin-top: 50px;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    background: #444343;
+    font-family: 'Victor Mono', monospace;
+    padding-bottom: 20px;
+}
+.pie_pagina{
+    padding-top: 30px;
+    align-content: center;
+    padding-left: 80px;
+}
+.pie_pagina section{
+    display: table-cell;
+    width: 300px;
+    position: relative;
+    padding-right: 100px;
+}
+
+.pie_pagina section h3{
+    color: #E3E3E3;
+    font-size: 22px;
+}
+
+.pie_pagina section p{
+    color: #E3E3E3;
+    font-size: 18px;
+}
+
+.sec1{
+    text-align: justify;
+}
+.pie_pagina section a{
+    color: #999;
+}
+
+.pie_pagina a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.pie_pagina ul {
+    margin: 0 0 0 40px;
+    list-style: square;
+    color: #565656;
+}
+
+.pie_pagina ul li a {
+    display: block;
+}
+
+.pie_pagina section i{
+    font-size: 40px;
+    padding-right: 40px;
+}
